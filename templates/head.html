@@ -1,0 +1,27 @@
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>
+    <?php echo "Cambridge University Volleyball Club | "; echo $this->title?>
+  </title>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+  <!-- Bootstrap -->
+  <script src=/styles/bootstrap/dist/js/bootstrap.min.js></script>
+  <link rel=stylesheet href=/styles/bootstrap/dist/css/bootstrap.min.css type=text/css />
+  <link rel=stylesheet href=/styles/bootstrap/dist/css/bootstrap-theme.min.css type=text/css />
+
+  <?php 
+    foreach($this->stylesheets as $stylesheet) {
+      ?>
+      <link href="<?php echo STYLE_PATH . '/' . $stylesheet; ?>" rel="stylesheet">
+      <?php
+    } 
+  ?>
+
+  <title><?php echo $this->title; ?></title>
+</head>

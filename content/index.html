@@ -1,0 +1,231 @@
+<div id="main" class="cuvc-container group">
+   <div id="">
+      <style>
+         .no-padding
+         {
+         padding: 0;
+         }
+         .carousel-thumbnail
+         {
+         margin-bottom: 15px;
+         }
+         .carousel-thumbnail .carousel-indicators
+         {
+         top: 20px;
+         }
+         .carousel-thumbnail .carousel-indicators li img
+         {
+         display: none;
+         }
+         .carousel-outer {
+         position: relative;
+         padding: 0;
+         }
+         .carousel-inner img
+         {
+         width: 100%;
+         }
+         @media (max-width: 600px)
+         {
+         .carousel-caption
+         {
+         right: 0;
+         left: 0;
+         margin: 0;
+         padding: 3px 10px;
+         background-color: rgb(60, 60 , 60);
+         position: relative;
+         bottom: auto;
+         text-overflow: ellipsis;
+         }
+         .carousel-caption
+         {
+         position: relative;
+         height: 4.8em; /* exactly three lines */
+         }
+         .carousel-caption:after
+         {
+         content: "";
+         text-align: right;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 50%;
+         height: 1.8em;
+         background: linear-gradient(to right, rgba(60, 60, 60, 0), rgba(60, 60, 60, 1) 70%);
+         }
+         }
+         @media (min-width: 601px)
+         {
+         .carousel-caption
+         {
+         right: 0;
+         left: 0;
+         padding: 15px 50px;
+         background-color: rgba(0,0,0,0.5);
+         bottom: 0;
+         top: auto;
+         }
+         }
+         @media (max-width: 768px)
+         {
+         .carousel-indicators
+         {
+         display: none;
+         }
+         }
+         /*@screen-sm-min*/
+         @media (min-width: 768px)
+         {
+         .carousel-thumbnail .carousel-outer
+         {
+         margin-top: 1px;
+         padding-right: 15px;
+         }
+         .carousel-thumbnail .right.carousel-control
+         {
+         right: 15px;
+         }
+         .carousel-thumbnail .carousel-indicators {
+         top: 0;
+         height: auto;
+         position: relative;
+         left: auto;
+         margin-left: auto;
+         padding-right: 0;
+         padding-left: 3px;
+         width: 100%;
+         z-index: 1;
+         }
+         .carousel-thumbnail .carousel-indicators
+         {
+         overflow: none;
+         text-align: left;
+         top: 0;
+         }
+         .carousel-thumbnail .carousel-indicators li
+         {
+         background-color: transparent;
+         -webkit-border-radius: 0;
+         border-radius: 0;
+         display: block;
+         height: auto;
+         margin: 0 !important;
+         width: auto;
+         border: 0;
+         padding: 1px;
+         padding-left: 2px;
+         }
+         .carousel-thumbnail .carousel-indicators li img
+         {
+         display: block;
+         opacity: 1;
+         width: 100%;
+         }
+         .carousel-thumbnail .carousel-indicators li.active img
+         {
+         opacity: 0.5;
+         }
+         .carousel-thumbnail .carousel-indicators li:hover img
+         {
+         opacity: 0.75;
+         }    
+         }
+         .carousel-fade .carousel-inner .item {
+         -webkit-transition-property: opacity;
+         transition-property: opacity;
+         }
+         .carousel-fade .carousel-inner .item,
+         .carousel-fade .carousel-inner .active.left,
+         .carousel-fade .carousel-inner .active.right {
+         opacity: 0;
+         }
+         .carousel-fade .carousel-inner .active,
+         .carousel-fade .carousel-inner .next.left,
+         .carousel-fade .carousel-inner .prev.right {
+         opacity: 1;
+         }
+         .carousel-fade .carousel-inner .next,
+         .carousel-fade .carousel-inner .prev,
+         .carousel-fade .carousel-inner .active.left,
+         .carousel-fade .carousel-inner .active.right {
+         left: 0;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+         }
+         .carousel-fade .carousel-control {
+         z-index: 2;
+         }
+      </style>
+      <div id="5fe209f83183c" class="container-fluid carousel slide carousel-fade carousel-thumbnail" data-ride="carousel">
+         <div class="row">
+            <div class="carousel-outer col-sm-10">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                  <div class="item">
+                     <a href="/prospective-players.php">
+                        <img src="/images/carousel/trials.jpg" alt="">
+                        <div class="container no-padding">
+                           <div class="carousel-caption">Interested in playing competitive volleyball for the University of Cambridge?</div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item active">
+                     <a href="/teams.php">
+                        <img src="/images/carousel/seconds.jpg" alt="">
+                        <div class="container no-padding">
+                           <div class="carousel-caption">First and second teams for players of varying skill and experience level</div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item ">
+                     <a href="/about.php">
+                        <img src="/images/carousel/bucs.jpeg" alt="">
+                        <div class="container no-padding">
+                           <div class="carousel-caption">Competitive volleyball in the British Universities &amp; Colleges Sport (BUCS) leagues and cups</div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item ">
+                     <a href="#instagram-section">
+                        <img src="/images/carousel/social.jpeg" alt="">
+                        <div class="container no-padding">
+                           <div class="carousel-caption">Great team spirit and social events</div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <!-- Controls -->
+               <a class="left carousel-control" data-target="#5fe209f83183c" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               </a>
+               <a class="right carousel-control" data-target="#5fe209f83183c" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               </a>
+            </div>
+            <div class="col-sm-2 no-padding">
+               <!-- Indicators -->
+               <ol class="carousel-indicators mCustomScrollbar">
+                  <li data-target="#5fe209f83183c" data-slide-to="0" class=""><img src="/images/carousel/trials.jpg" alt"'=""></li>
+                  <li data-target="#5fe209f83183c" data-slide-to="1" class="active"><img src="/images/carousel/seconds.jpg" alt"'=""></li>
+                  <li data-target="#5fe209f83183c" data-slide-to="2" class=""><img src="/images/carousel/bucs.jpeg" alt"'=""></li>
+                  <li data-target="#5fe209f83183c" data-slide-to="3" class=""><img src="/images/carousel/social.jpeg" alt"'=""></li>
+               </ol>
+            </div>
+         </div>
+      </div>
+    <div class="panel panel-primary" id="instagram-section">
+       <div class="panel-heading">Latest From Instagram</div>
+       <div class="panel-body" style="height: 600px">
+          <style>
+             #wrap2 { width: 100%; height: 100%; padding: 0; }
+          </style>
+          <div id="wrap2">
+             <iframe src="content/embedded_display_insta.html" id="frame2" width="100%" height="100%" title="BUCS Volleyball" frameborder="0" style="border: 0px none; margin-top: -10px">
+                <p> Your browser does not support iframes. </p>
+             </iframe>
+          </div>
+       </div>
+    </div>
+   </div>
+</div>
